@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Privacy Policy | Cat Survival</title>
-  <meta name="description" content="How Cat Survival handles local data and Firebase Analytics.">
+  <meta name="description" content="How Cat Survival handles local data, analytics consent, and Firebase/Google Analytics.">
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#111827">
@@ -14,7 +14,7 @@
     <div class="container">
       <p class="eyebrow">Official Cat Survival page</p>
       <h1>Privacy Policy</h1>
-      <p class="subtitle">How Cat Survival handles local data and Firebase Analytics.</p>
+      <p class="subtitle">How Cat Survival handles local data, analytics consent, and Firebase/Google Analytics.</p>
       <nav class="site-nav" aria-label="Main navigation">
   <a href="index.html">Home</a>
   <a href="privacy.html">Privacy</a>
@@ -36,7 +36,7 @@
     <section class="card">
       <h2>Summary</h2>
       <p>Cat Survival does not require an account, does not ask for your name, does not ask for your email address, does not use precise location, does not access contacts, and does not use the camera or microphone.</p>
-      <p>The game uses local storage on your device for save data and settings. The game may also use Firebase Analytics for limited gameplay analytics when analytics consent is accepted.</p>
+      <p>The game uses local storage on your device for save data and settings. If you accept analytics consent, the game may also use Firebase/Google Analytics for automatic app analytics events and limited custom gameplay analytics.</p>
     </section>
     <section class="card">
       <h2>Local game data</h2>
@@ -44,34 +44,36 @@
       <p>You can delete local game data by uninstalling the app or by using Android system settings to clear the app's storage/data.</p>
     </section>
     <section class="card">
-      <h2>Firebase Analytics</h2>
-      <p>The game uses Google Firebase Analytics to understand general gameplay behavior and improve balance, stability, and release quality.</p>
-      <p>When analytics collection is enabled, the game may send limited gameplay statistics such as session duration, maximum level reached, prestige number, collapse number, and similar non-personal game progression events.</p>
-      <p>Firebase Analytics may also process technical information needed to provide analytics services, such as app instance identifiers, device and app information, operating system information, Firebase SDK information, approximate usage timing, and diagnostic or event metadata. The exact data handled can depend on the Firebase SDK version and app configuration.</p>
-      <p>The game does not intentionally send your name, email address, phone number, address, contacts, photos, messages, or precise location to Firebase Analytics.</p>
+      <h2>Firebase/Google Analytics</h2>
+      <p>The game uses Firebase/Google Analytics only when analytics consent is accepted. Analytics is used to understand basic app usage, game balance, progression difficulty, session length, technical behavior, and release quality.</p>
+      <p>When analytics collection is enabled, Firebase/Google Analytics may collect automatic app analytics events, such as first open or first start, session start, user engagement, app update, app clear data, and app removal or uninstall-related analytics where Firebase/Google Analytics reports those events.</p>
+      <p>The game may also send a custom gameplay event named <code>cat_session_summary</code>. This event may include these custom gameplay parameters: <code>session_seconds</code>, <code>session_seconds_bucket</code>, <code>max_level</code>, <code>prestige_number</code>, and <code>collapse_number</code>.</p>
+      <p>Firebase/Google Analytics may also process technical information needed to provide analytics services, such as app version, app instance or installation identifiers, device and app information, operating system information, Firebase SDK information, approximate usage timing, session identifiers, and diagnostic or event metadata. The exact data handled can depend on the Firebase SDK version and app configuration.</p>
+      <p>The game does not intentionally send your name, email address, phone number, address, contacts, photos, messages, payment details, save file, skill tree choices, or precise location to Firebase/Google Analytics.</p>
       <ul>
+        <li><a href="https://support.google.com/analytics/answer/9234069" rel="noopener noreferrer">Google Analytics automatically collected events</a></li>
         <li><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy and Security</a></li>
         <li><a href="https://firebase.google.com/docs/android/play-data-disclosure" rel="noopener noreferrer">Firebase Android data disclosure information</a></li>
       </ul>
     </section>
     <section class="card">
       <h2>Analytics consent and choices</h2>
-      <p>The app uses a consent screen for analytics. If you deny analytics consent, the game should not use Firebase Analytics for gameplay analytics collection.</p>
-      <p>If you previously accepted analytics and want to reset that choice, you can clear the app's storage/data in Android settings or uninstall and reinstall the app, then choose your preferred analytics option when asked again.</p>
+      <p>The app uses a consent screen for analytics. If you deny analytics consent, the game should not use Firebase/Google Analytics for optional gameplay analytics collection.</p>
+      <p>If the game version includes an analytics option, you can change your analytics choice in the Options or Privacy/Data section of the game. If that option is not available in your version, you can reset your analytics choice by clearing the app's storage/data in Android settings or by uninstalling and reinstalling the app, then choosing your preferred analytics option when asked again.</p>
     </section>
     <section class="card">
       <h2>How information is used</h2>
       <p>Local game data is used to run the game, save progress, remember settings, and provide gameplay features.</p>
-      <p>Analytics data is used to understand game balance, session length, progression difficulty, technical behavior, and whether players are reaching key game milestones.</p>
+      <p>Analytics data is used to understand game balance, session length, progression difficulty, technical behavior, and whether players are reaching key game milestones. Analytics data is not used for ads or personalized advertising in the version covered by this policy.</p>
     </section>
     <section class="card">
       <h2>Sharing of information</h2>
       <p>Player data is not sold.</p>
-      <p>Analytics data is processed by Google Firebase as a service provider for analytics and app measurement. Firebase may process data according to Google's Firebase terms, privacy, and data processing documentation.</p>
+      <p>Analytics data is processed by Google Firebase/Google Analytics as a service provider for analytics and app measurement. Firebase and Google Analytics may process data according to Google's Firebase terms, privacy, and data processing documentation.</p>
     </section>
     <section class="card"><h2>Advertising, purchases, accounts, and cloud saves</h2><p>The version covered by this policy does not include advertising, in-app purchases, user accounts, login, multiplayer chat, or cloud save accounts.</p></section>
     <section class="card"><h2>Children's privacy</h2><p>The game does not intentionally collect personal information from children. If you believe a child has provided personal information through a support email or bug report, contact us and we will delete it where possible.</p></section>
-    <section class="card"><h2>Data deletion</h2><p>See the <a href="data-deletion.html">Data deletion page</a> for steps to delete local game data and contact us about data questions.</p></section>
+    <section class="card"><h2>Data deletion</h2><p>See the <a href="data-deletion.html">Data deletion page</a> for steps to delete local game data, reset analytics consent, and contact us about data questions.</p></section>
     <section class="card"><h2>Changes to this policy</h2><p>This Privacy Policy may be updated when the game changes, when Firebase configuration changes, or when legal or platform requirements change. The updated version will be posted on this page with a new effective date.</p></section>
     <section class="card"><h2>Contact</h2><p>For privacy questions, bug reports, or support requests, contact: <a class="contact-email" href="mailto:nicu.popa21@gmail.com">nicu.popa21@gmail.com</a></p></section>
 
