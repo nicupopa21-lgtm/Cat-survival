@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nicupopa21-lgtm.github.io/Cat-survival/sitemap.xml
