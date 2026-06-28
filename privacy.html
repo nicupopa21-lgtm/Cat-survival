@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Privacy Policy | Cat Survival</title>
-  <meta name="description" content="How Cat Survival handles local data, analytics consent, and Firebase/Google Analytics.">
+  <meta name="description" content="How Cat Survival handles local save data, gameplay analytics, rewarded ads, and Google ad privacy choices.">
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#111827">
@@ -14,7 +14,7 @@
     <div class="container">
       <p class="eyebrow">Official Cat Survival page</p>
       <h1>Privacy Policy</h1>
-      <p class="subtitle">How Cat Survival handles local data, analytics consent, and Firebase/Google Analytics.</p>
+      <p class="subtitle">How Cat Survival handles local save data, gameplay analytics, rewarded ads, and Google ad privacy choices.</p>
       <nav class="site-nav" aria-label="Main navigation">
   <a href="index.html">Home</a>
   <a href="privacy.html">Privacy</a>
@@ -28,7 +28,7 @@
   <main class="container page">
 
     <section class="card">
-      <p><strong>Effective date:</strong> May 29, 2026</p>
+      <p><strong>Effective date:</strong> June 28, 2026</p>
       <p><strong>Publisher:</strong> Nicolae Popa</p>
       <p><strong>Contact:</strong> <a class="contact-email" href="mailto:nicu.popa21@gmail.com">nicu.popa21@gmail.com</a></p>
       <p>This Privacy Policy explains how Cat Survival handles information in the Android game.</p>
@@ -36,45 +36,50 @@
     <section class="card">
       <h2>Summary</h2>
       <p>Cat Survival does not require an account, does not ask for your name, does not ask for your email address, does not use precise location, does not access contacts, and does not use the camera or microphone.</p>
-      <p>The game uses local storage on your device for save data and settings. If you accept analytics consent, the game may also use Firebase/Google Analytics for automatic app analytics events and limited custom gameplay analytics.</p>
+      <p>The game stores save data and settings locally on your device. If you accept the gameplay analytics choice, the game may send only a small gameplay summary. The game also includes optional rewarded ads through Google AdMob / Google Mobile Ads, with Google ad privacy choices handled separately through Google's consent form when required.</p>
     </section>
     <section class="card">
       <h2>Local game data</h2>
-      <p>The game may save gameplay progress and settings locally on your device so the game can continue between sessions. This may include level progress, upgrades, prestige or collapse progress, unlocked features, music or visual settings, and similar game state.</p>
+      <p>The game may save gameplay progress and settings locally on your device so the game can continue between sessions. This may include level progress, upgrades, prestige or collapse progress, unlocked features, music or visual settings, language choice, gameplay analytics choice, Google ad privacy status, and similar game state.</p>
       <p>You can delete local game data by uninstalling the app or by using Android system settings to clear the app's storage/data.</p>
     </section>
     <section class="card">
-      <h2>Firebase/Google Analytics</h2>
-      <p>The game uses Firebase/Google Analytics only when analytics consent is accepted. Analytics is used to understand basic app usage, game balance, progression difficulty, session length, technical behavior, and release quality.</p>
-      <p>When analytics collection is enabled, Firebase/Google Analytics may collect automatic app analytics events, such as first open or first start, session start, user engagement, app update, app clear data, and app removal or uninstall-related analytics where Firebase/Google Analytics reports those events.</p>
-      <p>The game may also send a custom gameplay event named <code>cat_session_summary</code>. This event may include these custom gameplay parameters: <code>session_seconds</code>, <code>session_seconds_bucket</code>, <code>max_level</code>, <code>prestige_number</code>, and <code>collapse_number</code>.</p>
-      <p>Firebase/Google Analytics may also process technical information needed to provide analytics services, such as app version, app instance or installation identifiers, device and app information, operating system information, Firebase SDK information, approximate usage timing, session identifiers, and diagnostic or event metadata. The exact data handled can depend on the Firebase SDK version and app configuration.</p>
-      <p>The game does not intentionally send your name, email address, phone number, address, contacts, photos, messages, payment details, save file, skill tree choices, or precise location to Firebase/Google Analytics.</p>
+      <h2>Gameplay analytics</h2>
+      <p>Firebase/Google Analytics collection is disabled by default. Cat Survival asks for a separate gameplay analytics choice. If you deny gameplay analytics, optional gameplay analytics should not be sent from that point onward.</p>
+      <p>If you accept gameplay analytics, the game may send a custom event named <code>session_end_summary</code>. This event may include only these gameplay parameters: <code>analytics_schema_version</code>, <code>session_seconds</code>, <code>max_level_ever</code>, <code>max_prestige_skill_level</code>, and <code>max_collapse</code>.</p>
+      <p>Gameplay analytics is used to understand game balance, session length, progression difficulty, technical behavior, and whether players are reaching key game milestones. Cat Survival does not use gameplay analytics to personalize ads.</p>
+      <p>The game does not intentionally send your name, email address, phone number, address, contacts, photos, messages, payment details, save file, skill tree choices, advertising ID, or precise location as gameplay analytics event parameters.</p>
+      <p>Firebase/Google may process technical service data required to provide analytics services, depending on SDK behavior and app configuration.</p>
       <ul>
-        <li><a href="https://support.google.com/analytics/answer/9234069" rel="noopener noreferrer">Google Analytics automatically collected events</a></li>
         <li><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy and Security</a></li>
         <li><a href="https://firebase.google.com/docs/android/play-data-disclosure" rel="noopener noreferrer">Firebase Android data disclosure information</a></li>
       </ul>
     </section>
     <section class="card">
-      <h2>Analytics consent and choices</h2>
-      <p>The app uses a consent screen for analytics. If you deny analytics consent, the game should not use Firebase/Google Analytics for optional gameplay analytics collection.</p>
-      <p>If the game version includes an analytics option, you can change your analytics choice in the Options or Privacy/Data section of the game. If that option is not available in your version, you can reset your analytics choice by clearing the app's storage/data in Android settings or by uninstalling and reinstalling the app, then choosing your preferred analytics option when asked again.</p>
+      <h2>Player Support ID</h2>
+      <p>The game creates a random first-party Player Support ID on your device. This ID is shown in the in-game Support &amp; Privacy screen so you can include it in support or deletion requests.</p>
+      <p>If gameplay analytics is enabled, the game may use a derived non-PII analytics identity based on the Player Support ID. The visible Player Support ID is not sent as a custom gameplay analytics event parameter.</p>
     </section>
     <section class="card">
-      <h2>How information is used</h2>
-      <p>Local game data is used to run the game, save progress, remember settings, and provide gameplay features.</p>
-      <p>Analytics data is used to understand game balance, session length, progression difficulty, technical behavior, and whether players are reaching key game milestones. Analytics data is not used for ads or personalized advertising in the version covered by this policy.</p>
+      <h2>Analytics and ad choices</h2>
+      <p>You can change the Cat Survival gameplay analytics choice from the in-game Options screen when available. You can also reset local choices by clearing the app's storage/data in Android settings or by uninstalling and reinstalling the app.</p>
+      <p>You can manage Google ad privacy choices from the in-game Support &amp; Privacy screen by tapping Privacy choices when that option is available.</p>
+    </section>
+    <section class="card">
+      <h2>Rewarded ads and Google ad privacy choices</h2>
+      <p>Cat Survival includes optional rewarded ads, such as an offer to receive a small amount of Cat Grass after a completed ad. Rewarded ads are optional. You can play without choosing rewarded ads.</p>
+      <p>Rewarded ads are provided through Google AdMob / Google Mobile Ads. When required, the game shows Google's consent form before ads can be requested. The in-game Support &amp; Privacy screen includes a Privacy choices button so you can manage Google ad privacy choices later when those choices are available for your device or region.</p>
+      <p>Google ad privacy choices are separate from Cat Survival's gameplay analytics choice. Advertising identity and Google ad consent status are separate from the Player Support ID and gameplay analytics identity.</p>
     </section>
     <section class="card">
       <h2>Sharing of information</h2>
       <p>Player data is not sold.</p>
-      <p>Analytics data is processed by Google Firebase/Google Analytics as a service provider for analytics and app measurement. Firebase and Google Analytics may process data according to Google's Firebase terms, privacy, and data processing documentation.</p>
+      <p>Gameplay analytics data is processed by Firebase/Google Analytics as a service provider for analytics and app measurement. Rewarded ads and ad privacy choices are processed through Google AdMob / Google Mobile Ads and Google's consent systems.</p>
     </section>
-    <section class="card"><h2>Advertising, purchases, accounts, and cloud saves</h2><p>The version covered by this policy does not include advertising, in-app purchases, user accounts, login, multiplayer chat, or cloud save accounts.</p></section>
+    <section class="card"><h2>Purchases, accounts, and cloud saves</h2><p>The version covered by this policy does not include in-app purchases, user accounts, login, multiplayer chat, or cloud save accounts.</p></section>
     <section class="card"><h2>Children's privacy</h2><p>The game does not intentionally collect personal information from children. If you believe a child has provided personal information through a support email or bug report, contact us and we will delete it where possible.</p></section>
-    <section class="card"><h2>Data deletion</h2><p>See the <a href="data-deletion.html">Data deletion page</a> for steps to delete local game data, reset analytics consent, and contact us about data questions.</p></section>
-    <section class="card"><h2>Changes to this policy</h2><p>This Privacy Policy may be updated when the game changes, when Firebase configuration changes, or when legal or platform requirements change. The updated version will be posted on this page with a new effective date.</p></section>
+    <section class="card"><h2>Data deletion</h2><p>See the <a href="data-deletion.html">Data deletion page</a> for steps to delete local game data, reset gameplay analytics consent, manage ad privacy choices, and contact us about data questions.</p></section>
+    <section class="card"><h2>Changes to this policy</h2><p>This Privacy Policy may be updated when the game changes, when analytics or ad configuration changes, or when legal or platform requirements change. The updated version will be posted on this page with a new effective date.</p></section>
     <section class="card"><h2>Contact</h2><p>For privacy questions, bug reports, or support requests, contact: <a class="contact-email" href="mailto:nicu.popa21@gmail.com">nicu.popa21@gmail.com</a></p></section>
 
   </main>
